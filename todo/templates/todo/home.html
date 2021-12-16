@@ -1,6 +1,19 @@
-{% extends 'todo/base.html' %}
+{% extends "todo/base.html" %}
 
 {% block content %}
-home
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+
+                 <h1>Список твоих задач</h1>
+            <p>Простой список задач. Они помогут тебе организовать личную жизнь и работу, повысят количество выполненных дел, не дадут забыть о важных вещах и освободят голову от постоянного «шума».</p>
+        <a role="button" class="btn btn-primary btn-lg" href="{% url 'createtodo' %}">Начать!</a>
+        </div>
+    </div>
 
 {% endblock %}
